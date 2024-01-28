@@ -30,7 +30,7 @@ Implement solution using the Builder Pattern to address the issue.
 ![](resultPage.png)
 
 
-### Builder Code
+### Builder-pattern Code Preview
 ``` java
 
 public class User {
