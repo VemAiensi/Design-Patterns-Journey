@@ -4,21 +4,18 @@ public class Character {
     private DefenseStrat defenseStrat;
 
     public Character(String type) {
-        switch(type){
-            case "Knight":
-                this.attackStrat = new Knight();
-                this.defenseStrat = new Knight();
-                break;
-            case "Wizard": 
-                this.attackStrat = new Wizard();
-                this.defenseStrat = new Wizard();
-                break;
-            case "Archer": 
-                this.attackStrat = new Archer();
-                this.defenseStrat = new Wizard();
-                break;
+        if (type.equals("Knight")){
+            this.attackStrat = new Knight();
+            this.defenseStrat = new Knight();
         }
-        
+        else if(type.equals("Wizard")){
+            this.attackStrat = new Wizard();
+            this.defenseStrat = new Wizard();
+        }
+        else if(type.equals("Archer")){
+            this.attackStrat = new Archer();
+            this.defenseStrat = new Archer();
+        }  
     }
 
     public void attack(){
