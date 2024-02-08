@@ -1,4 +1,4 @@
-## Singleton Pattern
+## Builder Pattern
 > Marasigan, Vem Aiensi A.
 >> 3BSCS-1 | CSL322-18
 

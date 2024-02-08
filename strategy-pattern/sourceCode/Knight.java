@@ -1,5 +1,5 @@
 package sourceCode;
-public class Knight implements AttackStrat, DefenseStrat, KnightDefendStrat{
+public class Knight implements AttackStrat, DefenseStrat{
 
     @Override
     public String attack(){
@@ -8,27 +8,18 @@ public class Knight implements AttackStrat, DefenseStrat, KnightDefendStrat{
 
     @Override
     public String defend(){
+        DefenseStrat shield = new Shield();
+        DefenseStrat dodge = new Dodge();
+        DefenseStrat magic = new Magic();
+        
         String defendStrat = "";
 
-        defendStrat += shield();
-        defendStrat += dodge();
-        defendStrat += magic();
+        defendStrat += shield.defend() + "\n\t";
+        defendStrat += dodge.defend()  + "\n\t";
+        defendStrat += magic.defend();
 
         return defendStrat;
     }
 
-    @Override
-    public String shield(){
-       return "Using a shield to defend! \n\t";
-    }
-
-    @Override
-    public String dodge(){
-       return "Dodging to avoid attack! \n\t";
-    }
-
-    @Override
-    public String magic(){
-       return "Creating a magic barrier for defense!";
-    }
+   
 }

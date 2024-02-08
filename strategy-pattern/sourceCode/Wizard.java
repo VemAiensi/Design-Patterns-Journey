@@ -7,6 +7,6 @@ public class Wizard implements AttackStrat, DefenseStrat{
     }
     @Override
     public String defend(){
-        return "Creating a magic barrier for defense!";
+        return new Magic().defend();
     }
 }

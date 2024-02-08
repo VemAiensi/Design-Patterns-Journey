@@ -6,7 +6,8 @@ public class Archer implements AttackStrat, DefenseStrat{
         return "Archer shoots an arrow!";
     }
 
+    @Override
     public String defend(){
-        return "Using a shield to defend!";
+        return new Shield().defend();
     }
 }
