@@ -1,9 +1,12 @@
 package sourceCode;
-public class Archer implements AttackStrat, DefenseStrat{
+import sourceCode.attackMoves.UseBow;
+import sourceCode.defenseMoves.Shield;
+
+public class Archer implements Role{
 
     @Override
     public String attack(){
-        return "Archer shoots an arrow!";
+        return new UseBow().attack();
     }
 
     @Override

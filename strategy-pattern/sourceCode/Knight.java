@@ -1,9 +1,16 @@
 package sourceCode;
-public class Knight implements AttackStrat, DefenseStrat{
+
+import sourceCode.attackMoves.SwordAttack;
+import sourceCode.defenseMoves.DefenseStrat;
+import sourceCode.defenseMoves.Dodge;
+import sourceCode.defenseMoves.Magic;
+import sourceCode.defenseMoves.Shield;
+
+public class Knight implements Role{
 
     @Override
     public String attack(){
-        return "Knight attacks with a sword!";
+        return new SwordAttack().attack();
     }
 
     @Override

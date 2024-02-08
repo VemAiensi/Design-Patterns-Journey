@@ -1,9 +1,12 @@
 package sourceCode;
-public class Wizard implements AttackStrat, DefenseStrat{
+import sourceCode.attackMoves.CastMagic;
+import sourceCode.defenseMoves.Magic;
+
+public class Wizard implements Role{
 
     @Override
     public String attack(){
-        return "Wizard casts a spell!";
+        return new CastMagic().attack();
     }
     @Override
     public String defend(){

@@ -1,4 +1,4 @@
-package sourceCode;
+package sourceCode.defenseMoves;
 
 public class Dodge implements DefenseStrat{
     @Override

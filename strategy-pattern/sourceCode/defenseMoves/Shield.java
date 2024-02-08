@@ -1,4 +1,4 @@
-package sourceCode;
+package sourceCode.defenseMoves;
 
 public class Shield implements DefenseStrat {
     @Override

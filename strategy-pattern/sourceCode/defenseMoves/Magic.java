@@ -1,4 +1,4 @@
-package sourceCode;
+package sourceCode.defenseMoves;
 
 public class Magic implements DefenseStrat{
     @Override

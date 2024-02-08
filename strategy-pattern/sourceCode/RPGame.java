@@ -4,17 +4,17 @@ public class RPGame{
         System.out.println("Welcome to the RPG Game!");
 
         System.out.println("\nGem is a Wizard");
-        Character gem = new Character("Wizard");
+        Character gem = new Character(new Wizard());
         gem.attack();
         gem.defend();
 
         System.out.println("\nVem is a Knight");
-        Character vem = new Character("Knight");
+        Character vem = new Character(new Knight());
         vem.attack();
         vem.defend();
 
         System.out.println("\nAien is an Archer");
-        Character aien = new Character("Archer");
+        Character aien = new Character(new Archer());
         aien.attack();
         aien.defend();
 
