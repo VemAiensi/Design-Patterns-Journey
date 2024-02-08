@@ -1,3 +1,3 @@
 public interface AttackStrat {
-    private String attack();
+    public String attack();
 }

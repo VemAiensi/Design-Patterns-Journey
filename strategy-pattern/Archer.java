@@ -1,5 +1,6 @@
 public class Archer implements AttackStrat, DefenseStrat{
-    private 
+
+    @Override
     public String attack(){
         return "Archer shoots an arrow!";
     }
