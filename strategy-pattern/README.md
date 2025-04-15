@@ -1,6 +1,8 @@
 ## Strategy Pattern
+
 > Marasigan, Vem Aiensi A.
->> 3BSCS-1 | CSL322-18
+>
+> > 3BSCS-1 | CSL322-18
 
 ### Problem Scenario
 
@@ -12,16 +14,9 @@ Suppose we have three types of characters in a GameApp:
 
 Implement two types of Strategy:
 
-A.  DefenseStrategy
-     1. Shield
-     2. Dodge
-     3. CreateMagic
+A. DefenseStrategy 1. Shield 2. Dodge 3. CreateMagic
 
-B.  AttackStrategy
-     1.  CastSpell
-     2.  ShootArrow
-     3.  SwingSword  
-
+B. AttackStrategy 1. CastSpell 2. ShootArrow 3. SwingSword
 
 Refactor the existing codes:
 
@@ -47,7 +42,7 @@ public class Character {
         if (type.equals("Knight")) {
             System.out.println("Using a shield to defend!");
 	System.out.println("Dodgin to avoid attack!");
-            System.out.println("Creating a magic barrier for defense!"");		
+            System.out.println("Creating a magic barrier for defense!"");
 
         } else if (type.equals("Wizard")) {
             System.out.println("Creating a magic barrier for defense!"");
@@ -59,10 +54,11 @@ public class Character {
 ```
 
 ### UML Diagram
+
 ![](UMLDiagram.svg)
 
 ### Sample Output
+
 ![](resultPage.png)
 
-
-## <a href = "https://github.com/VemAiensi/SoftEng1/blob/main/RunCode/HowToRunCodeIntelliJ.md">HowToRun</a>
+### [How-To-Run](../0_RunCode/Readme.md)
